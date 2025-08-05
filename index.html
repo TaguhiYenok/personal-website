@@ -2,67 +2,72 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taguhi Yenokyan | Personal Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taguhi Yenokyan - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1>Taguhi Yenokyan</h1>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="Resume_Taguhi_Yenokyan.pdf" target="_blank">View Resume</a>
-        <button id="darkModeToggle">🌙</button>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <h1>Taguhi Yenokyan</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="Resume-Taguhi-Yenokyan.pdf" target="_blank">View Resume</a>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </nav>
+    </header>
 
-  <section id="about" class="section-row">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
-    <div class="text-box">
-      <h2>Hi, I’m Taguhi!</h2>
-      <p>I am a Computer Science graduate from CSUN, now pursuing my Master's degree at UCSD. I have a strong passion for artificial intelligence, biomedical applications, and making technology more human-focused. I love combining research with creativity, and I've interned at companies like Verizon and Boston Scientific working on AI and Machine Learning projects.</p>
-    </div>
-  </section>
+    <section id="about" class="split-section">
+        <div class="image-column">
+            <img src="images/profile.jpg" alt="Profile Picture" class="small-profile-img">
+        </div>
+        <div class="text-column">
+            <h2>About Me</h2>
+            <p>I’m a Master's student at UC San Diego specializing in AI and ML, passionate about using data to create healthcare solutions. My experiences span research, internships, and academic projects, all focused on impactful tech-driven outcomes.</p>
+        </div>
+    </section>
 
-  <section id="education" class="section-row reverse">
-    <div class="text-box">
-      <h2>Education</h2>
-      <p><strong>UC San Diego</strong> - M.S. in Computer Science (AI/ML Focus)<br><strong>CSU Northridge</strong> - B.S. in Computer Science</p>
-    </div>
-    <img src="images/ucsd.jpg" alt="UCSD Image" class="side-image">
-  </section>
+    <section id="education" class="split-section">
+        <div class="text-column">
+            <h2>Education</h2>
+            <p>Currently pursuing a Master’s in Computer Science at UC San Diego with a focus in Artificial Intelligence and Machine Learning. Previously earned my Bachelor's from California State University, Northridge, where I also worked as a research assistant in biomedical AI projects.</p>
+        </div>
+        <div class="image-column">
+            <img src="images/ucsd.jpg" alt="UCSD Campus" class="content-img">
+        </div>
+    </section>
 
-  <section id="experience" class="section-row">
-    <img src="images/bs.jpg" alt="Boston Scientific" class="side-image">
-    <div class="text-box">
-      <h2>Experience</h2>
-      <p><strong>Boston Scientific</strong><br>Worked on developing an intelligent document processing AI system to automate document retrieval and training pipelines using MLflow and Python. The model improved internal accessibility of crucial data.</p>
-    </div>
-  </section>
+    <section id="projects" class="split-section">
+        <div class="image-column">
+            <img src="images/bs.jpg" alt="Boston Scientific" class="content-img">
+        </div>
+        <div class="text-column">
+            <h2>Internship Project at Boston Scientific</h2>
+            <p>During my Software Engineering internship at Boston Scientific, I developed an AI-driven document retrieval and training pipeline to enhance the company’s document management system. This project used MLflow, Python, and UI automation to make document search and training seamless for the software team.</p>
+        </div>
+    </section>
 
-  <section id="projects" class="section-row reverse">
-    <div class="text-box">
-      <h2>Projects</h2>
-      <p><strong>Brain Cancer Detection</strong> - Developed a CNN-based model for brain tumor segmentation using medical imaging datasets. Achieved high accuracy and submitted results for publication.<br><strong>NY Botanical Challenge</strong> - Led a deep learning model project that classified 500+ plant species with 7.8M images.</p>
-    </div>
-    <img src="images/project.jpg" alt="Project Image" class="side-image">
-  </section>
+    <section class="split-section">
+        <div class="text-column">
+            <h2>Brain Tumor Detection Project</h2>
+            <p>As part of my undergraduate capstone, I led a research team in building a CNN model for brain tumor detection using MRI scans. We achieved over 80% accuracy, leveraging a combination of datasets, custom preprocessing pipelines, and model fine-tuning strategies.</p>
+        </div>
+        <div class="image-column">
+            <img src="images/project.jpg" alt="Brain Tumor Project" class="content-img">
+        </div>
+    </section>
 
-  <footer>
-    <p>Connect with me:</p>
-    <a href="https://www.linkedin.com/in/taguhiyenokyan" target="_blank">LinkedIn</a>
-    <a href="https://github.com/TaguhiYenok" target="_blank">GitHub</a>
-    <a href="mailto:taguhiyenokyan@example.com">Email</a>
-  </footer>
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/taguhiyenokyan" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/TaguhiYenok" target="_blank">GitHub</a> |
+        <a href="mailto:taguhiyenokyan@gmail.com">Email</a>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
