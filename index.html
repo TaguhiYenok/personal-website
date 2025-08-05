@@ -1,73 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taguhi Yenokyan - Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taguhi Yenokyan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
+<body class="light-mode">
+  <header class="top-header">
+    <div class="header-content">
+      <h1>Taguhi Yenokyan</h1>
+      <p>MSCS @ UCSD | AI/ML Researcher | Software Engineer</p>
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </div>
+  </header>
 
-<body>
-    <header>
-        <h1>Taguhi Yenokyan</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="Resume-Taguhi-Yenokyan.pdf" target="_blank">View Resume</a>
-            <button id="darkModeToggle">Toggle Dark Mode</button>
-        </nav>
-    </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="about" class="split-section">
-        <div class="image-column">
-            <img src="images/profile.jpg" alt="Profile Picture" class="small-profile-img">
-        </div>
-        <div class="text-column">
-            <h2>About Me</h2>
-            <p>I’m a Master's student at UC San Diego specializing in AI and ML, passionate about using data to create healthcare solutions. My experiences span research, internships, and academic projects, all focused on impactful tech-driven outcomes.</p>
-        </div>
-    </section>
+  <section id="about" class="section-flex">
+    <div class="section-image large">
+      <img src="images/profile.jpg" alt="Profile of Taguhi" />
+    </div>
+    <div class="section-text">
+      <h2>About</h2>
+      <p>Hi! I'm Taguhi, a passionate computer scientist pursuing my Master's at UC San Diego, focusing on Machine Learning and Artificial Intelligence. I’ve interned at Boston Scientific and Verizon, contributed to NASA research initiatives, and conducted deep learning research in biomedical applications. I'm driven to use AI for social good, particularly in the healthcare space.</p>
+    </div>
+  </section>
 
-    <section id="education" class="split-section">
-        <div class="text-column">
-            <h2>Education</h2>
-            <p>Currently pursuing a Master’s in Computer Science at UC San Diego with a focus in Artificial Intelligence and Machine Learning. Previously earned my Bachelor's from California State University, Northridge, where I also worked as a research assistant in biomedical AI projects.</p>
-        </div>
-        <div class="image-column">
-            <img src="images/ucsd.jpg" alt="UCSD Campus" class="content-img">
-        </div>
-    </section>
+  <section id="education" class="section-flex reverse">
+    <div class="section-text">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>UC San Diego</strong> — MS in Computer Science, ML/AI — <em>Expected 2027</em></li>
+        <li><strong>CSU Northridge</strong> — BS in Computer Science — <em>Graduated 2025</em></li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/ucsd.jpg" alt="UC San Diego" />
+    </div>
+  </section>
 
-    <section id="projects" class="split-section">
-        <div class="image-column">
-            <img src="images/bs.jpg" alt="Boston Scientific" class="content-img">
-        </div>
-        <div class="text-column">
-            <h2>Internship Project at Boston Scientific</h2>
-            <p>During my Software Engineering internship at Boston Scientific, I developed an AI-driven document retrieval and training pipeline to enhance the company’s document management system. This project used MLflow, Python, and UI automation to make document search and training seamless for the software team.</p>
-        </div>
-    </section>
+  <section id="experience" class="section-flex">
+    <div class="section-image">
+      <img src="images/bs.jpg" alt="Boston Scientific" />
+    </div>
+    <div class="section-text">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Research Assistant – CSUN</strong> (Jan–Jun 2025)</li>
+        <li><strong>Software Engineer Intern – Boston Scientific</strong> (May–Aug 2024)</li>
+        <li><strong>Data Science Intern – Verizon</strong> (Aug–Dec 2023)</li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="split-section">
-        <div class="text-column">
-            <h2>Brain Tumor Detection Project</h2>
-            <p>As part of my undergraduate capstone, I led a research team in building a CNN model for brain tumor detection using MRI scans. We achieved over 80% accuracy, leveraging a combination of datasets, custom preprocessing pipelines, and model fine-tuning strategies.</p>
-        </div>
-        <div class="image-column">
-            <img src="images/project.jpg" alt="Brain Tumor Project" class="content-img">
-        </div>
-    </section>
+  <section id="projects" class="section-flex reverse">
+    <div class="section-text">
+      <h2>Project Highlights</h2>
+      <ul>
+        <li><strong>ASLConverter</strong> — CNN-based ASL-to-text/speech tool.</li>
+        <li><strong>Brain Tumor Detection</strong> — Deep learning segmentation & classification.</li>
+        <li><strong>NASA & ARCS</strong> — NLP-assisted verification & SLAM optimization.</li>
+        <li><strong>Google Kaggle</strong> — Plant classification on 7.8M+ dataset.</li>
+        <li><strong>GWC Project</strong> — Visualizations to support homeless healthcare.</li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/project.jpg" alt="Project visuals" />
+    </div>
+  </section>
 
-    <footer>
-        <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/taguhiyenokyan" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/TaguhiYenok" target="_blank">GitHub</a> |
-        <a href="mailto:taguhiyenokyan@gmail.com">Email</a>
-    </footer>
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="resume.pdf" target="_blank" class="button">View My Resume</a>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:taguhiyenokyan0@gmail.com">taguhiyenokyan0@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/taguhiyenokyan" target="_blank">linkedin.com/in/taguhiyenokyan</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/TaguhiYenok" target="_blank">github.com/TaguhiYenok</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Taguhi Yenokyan</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+    const toggleThemeBtn = document.getElementById("toggle-theme");
+    toggleThemeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      document.body.classList.toggle("light-mode");
+      toggleThemeBtn.textContent = document.body.classList.contains("dark-mode")
+        ? "☀️ Light Mode"
+        : "🌙 Dark Mode";
+    });
+  </script>
 </body>
-
 </html>
