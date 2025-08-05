@@ -26,44 +26,57 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" class="hero-section">
-    <div class="hero-image">
-      <img src="images/profile.jpg" alt="Profile photo of Taguhi Yenokyan" />
+  <section id="about" class="section-flex">
+    <div class="section-image large">
+      <img src="images/profile.jpg" alt="Profile of Taguhi" />
     </div>
-    <div class="hero-text">
+    <div class="section-text">
       <h2>About</h2>
-      <p>
-        Hi! I'm Taguhi, a passionate computer scientist pursuing my Master's at UC San Diego, focusing on Machine Learning and Artificial Intelligence. I’ve interned at Boston Scientific and Verizon, contributed to NASA research initiatives, and conducted deep learning research in biomedical applications. I'm driven to use AI for social good, particularly in the healthcare space.
-      </p>
+      <p>Hi! I'm Taguhi, a passionate computer scientist pursuing my Master's at UC San Diego, focusing on Machine Learning and Artificial Intelligence. I’ve interned at Boston Scientific and Verizon, contributed to NASA research initiatives, and conducted deep learning research in biomedical applications. I'm driven to use AI for social good, particularly in the healthcare space.</p>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>UC San Diego</strong> — MS in Computer Science, ML/AI — <em>Expected 2027</em></li>
-      <li><strong>CSU Northridge</strong> — BS in Computer Science — <em>Graduated 2025</em></li>
-    </ul>
+  <section id="education" class="section-flex reverse">
+    <div class="section-text">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>UC San Diego</strong> — MS in Computer Science, ML/AI — <em>Expected 2027</em></li>
+        <li><strong>CSU Northridge</strong> — BS in Computer Science — <em>Graduated 2025</em></li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/ucsd.jpg" alt="UC San Diego" />
+    </div>
   </section>
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>Research Assistant – CSUN</strong> (Jan–Jun 2025)</li>
-      <li><strong>Software Engineer Intern – Boston Scientific</strong> (May–Aug 2024)</li>
-      <li><strong>Data Science Intern – Verizon</strong> (Aug–Dec 2023)</li>
-    </ul>
+  <section id="experience" class="section-flex">
+    <div class="section-image">
+      <img src="images/bs.jpg" alt="Boston Scientific" />
+    </div>
+    <div class="section-text">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Research Assistant – CSUN</strong> (Jan–Jun 2025)</li>
+        <li><strong>Software Engineer Intern – Boston Scientific</strong> (May–Aug 2024)</li>
+        <li><strong>Data Science Intern – Verizon</strong> (Aug–Dec 2023)</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Project Highlights</h2>
-    <ul>
-      <li><strong>ASLConverter</strong> — CNN-based ASL-to-text/speech tool.</li>
-      <li><strong>Brain Tumor Detection</strong> — Deep learning segmentation & classification.</li>
-      <li><strong>NASA & ARCS</strong> — NLP-assisted verification & SLAM optimization.</li>
-      <li><strong>Google Kaggle</strong> — Plant classification on 7.8M+ dataset.</li>
-      <li><strong>GWC Project</strong> — Visualizations to support homeless healthcare.</li>
-    </ul>
+  <section id="projects" class="section-flex reverse">
+    <div class="section-text">
+      <h2>Project Highlights</h2>
+      <ul>
+        <li><strong>ASLConverter</strong> — CNN-based ASL-to-text/speech tool.</li>
+        <li><strong>Brain Tumor Detection</strong> — Deep learning segmentation & classification.</li>
+        <li><strong>NASA & ARCS</strong> — NLP-assisted verification & SLAM optimization.</li>
+        <li><strong>Google Kaggle</strong> — Plant classification on 7.8M+ dataset.</li>
+        <li><strong>GWC Project</strong> — Visualizations to support homeless healthcare.</li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/project.jpg" alt="Project visuals" />
+    </div>
   </section>
 
   <section id="resume">
@@ -83,7 +96,6 @@
   </footer>
 
   <script>
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
@@ -94,7 +106,6 @@
       });
     });
 
-    // Dark mode toggle
     const toggleThemeBtn = document.getElementById("toggle-theme");
     toggleThemeBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
