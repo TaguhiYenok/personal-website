@@ -17,6 +17,17 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+#toggle-theme {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -74,7 +85,6 @@ footer {
   background-color: #f0ece2;
 }
 
-/* Profile picture */
 .profile-pic {
   width: 150px;
   border-radius: 100px;
