@@ -1,4 +1,4 @@
-// Smooth scrolling for nav links
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -14,7 +14,6 @@ const toggleThemeBtn = document.getElementById("toggle-theme");
 toggleThemeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   document.body.classList.toggle("light-mode");
-
   toggleThemeBtn.textContent = document.body.classList.contains("dark-mode")
     ? "☀️ Light Mode"
     : "🌙 Dark Mode";
